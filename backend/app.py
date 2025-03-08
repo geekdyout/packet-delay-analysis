@@ -1,6 +1,6 @@
 import os
 import pyshark
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 
 # Configure TShark path
@@ -152,6 +152,14 @@ def get_analysis():
     """Endpoint to retrieve analysis results (placeholder for database integration)"""
     # TODO: Implement database integration
     return jsonify({'message': 'Analysis endpoint placeholder'})
+
+# Serve the static files and React app in production
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve(path):
+    if path and os.path.exists(os.path.join('static', path)):
+        return send_from_directory('static', path)
+    return send_from_directory('static', 'index.html')
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5001)
