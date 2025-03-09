@@ -1,12 +1,21 @@
+<<<<<<< HEAD
 # Network Delay Analysis Tool
 
-A modern web application for analyzing and visualizing network packet delays from various capture file formats (.pcap, .pcapng, .cap, .etl, .erf) using Flask, React, and Material UI.
+A modern web application for analyzing and visualizing network packet delays from various capture file formats (.pcap, .pcapng, .cap, .etl, .erf). The tool helps identify and troubleshoot network issues by analyzing latency, jitter, and packet loss patterns.
+
+## Features
+- Support for multiple packet capture formats (.pcap, .pcapng, .cap, .etl, .erf)
+- Real-time packet analysis using Python/pyshark
+- Interactive visualizations with React and Material UI
+- RESTful API backend with Flask
+- Modern, responsive user interface
+- Comprehensive delay metrics calculation
 
 ## Project Structure
 ```
 Hackenza_DelayAnalysis/
 ├── backend/           # Flask API and analysis code
-├── frontend/         # React frontend with D3.js visualizations
+├── frontend/         # React frontend with Material UI
 ├── docs/            # Project documentation
 └── README.md        # This file
 ```
@@ -73,3 +82,7 @@ docker run -p 3000:3000 packet-analysis-frontend
 
 ## License
 MIT License
+=======
+# packet-delay-analysis
+Web-based tool analyzing .pcapng files for network delays. Uses Python/pyshark to compute latency, jitter, and packet loss. Visualizes results in an interactive React/D3.js dashboard with a Flask backend and  PostgreSQL persistence. Helps identify and troubleshoot network issues.
+>>>>>>> origin/main
