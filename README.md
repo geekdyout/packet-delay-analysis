@@ -1,6 +1,8 @@
 <<<<<<< HEAD
 # Network Delay Analysis Tool
 
+🔗 **Live Demo:** [https://packet-delay-analysis.onrender.com](https://packet-delay-analysis.onrender.com)
+
 A modern web application for analyzing and visualizing network packet delays from various capture file formats (.pcap, .pcapng, .cap, .etl, .erf). The tool helps identify and troubleshoot network issues by analyzing latency, jitter, and packet loss patterns.
 
 ## Features
@@ -19,6 +21,24 @@ Hackenza_DelayAnalysis/
 ├── docs/            # Project documentation
 └── README.md        # This file
 ```
+
+## Deployment
+
+This project is deployed on [Render](https://render.com), a modern cloud platform. The deployment process is fully automated using the `render.yaml` configuration file.
+
+### Deploy Your Own Instance
+
+1. Fork this repository
+2. Create a new account on [Render](https://render.com) if you haven't already
+3. Click on the "New +" button and select "Web Service"
+4. Connect your GitHub account and select this repository
+5. Render will automatically detect the configuration and deploy your application
+
+The deployment process includes:
+- Building the React frontend
+- Installing Python dependencies
+- Setting up the Flask backend
+- Configuring the production environment
 
 ## Setup Instructions
 
