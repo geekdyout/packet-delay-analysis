@@ -40,3 +40,5 @@ Thumbs.db
 # Temp files and uploads
 /backend/uploads/*
 !/backend/uploads/.gitkeep
+
+/venv
